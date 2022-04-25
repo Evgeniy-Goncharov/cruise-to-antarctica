@@ -1,0 +1,51 @@
+.page-header {
+  min-height: 73px;
+  box-sizing: border-box;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.page-header__flex {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__logo {
+  margin-top: 10px;
+  margin-right: 50px;
+}
+
+@include vp-1279 {
+  .page-header {
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 20px;
+  }
+}
+
+@include vp-767 {
+  .page-header {
+    padding: 20px 15px;
+
+    &--no-js {
+      padding: 0;
+
+      .page-header__logo {
+        display: none;
+      }
+    }
+
+    &--nav-open {
+      .page-header__logo {
+        display: none;
+      }
+    }
+  }
+}

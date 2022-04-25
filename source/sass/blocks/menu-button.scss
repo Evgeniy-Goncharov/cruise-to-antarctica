@@ -1,0 +1,76 @@
+.menu-button {
+  position: absolute;
+  top: 26px;
+  right: 15px;
+  display: none;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  width: 24px;
+  height: 12px;
+  z-index: 3;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+  }
+
+  &::before {
+    content: "";
+    width: 24px;
+    height: 2px;
+    background-color: $color-background-white;
+    position: absolute;
+    top: 0;
+    bottom: 3px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 0 6px 0 0 $color-background-white, 0 -6px 0 0 $color-background-white;
+  }
+
+  &--nav-open {
+    background-color: transparent;
+    right: 10px;
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      width: 18px;
+      height: 2px;
+      background-color: $color-black-for-text;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      box-shadow: none;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+@include vp-767 {
+  .menu-button {
+    display: block;
+
+    &--no-js {
+      display: none;
+    }
+  }
+}
+

@@ -65,3 +65,12 @@
   /* stylelint-disable-next-line */
   transition: none !important;
 }
+
+.page__body {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-black-for-text;
+  background: url("../../img/bg/intro-bg.jpg") no-repeat center top;
+  background-size: 100% 650px;
+}
