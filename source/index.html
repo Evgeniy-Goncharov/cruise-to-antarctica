@@ -15,25 +15,27 @@
     <header class="page-header page-header--no-js">
       <div class="page-header__flex">
         <a class="page-header__logo logo">
-          <svg class="logo__image" role="img" alt="Круизы в Антарктику - узнай самые загадочные уголки планеты!" width="70" height="38">
+          <svg class="logo__image" role="img" alt="Круизы в Антарктику - узнай самые загадочные уголки планеты!"
+            width="70" height="38">
             <use href="img/sprite_auto.svg#logo"></use>
           </svg>
         </a>
 
         <button class="menu-button menu-button--no-js" aria-label="Открыть меню"></button>
 
-        <nav class="main-nav main-nav--no-js">
+        <nav class="page-header__nav main-nav main-nav--no-js">
           <a class="main-nav__logo logo logo--black">
-            <svg class="logo__image" role="img" alt="Круизы в Антарктику - узнай самые загадочные уголки планеты!" width="70" height="38">
+            <svg class="logo__image" role="img" alt="Круизы в Антарктику - узнай самые загадочные уголки планеты!"
+              width="70" height="38">
               <use href="img/sprite_auto.svg#logo"></use>
             </svg>
           </a>
 
           <ul class="main-nav__list">
-            <li class="main-nav__item">Преимущества </li>
-            <li class="main-nav__item">Направления</li>
-            <li class="main-nav__item">Ближайшие круизы</li>
-            <li class="main-nav__item">Контакты</li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Преимущества</a> </li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Направления</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Ближайшие круизы</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -41,8 +43,59 @@
     <main>
 
     </main>
-    <footer>
-      <div class="container"></div>
+
+    <footer class="page-footer">
+      <div class="page-footer__flex">
+        <div class="page-footer__left-column">
+          <a class="page-footer__logo logo">
+            <svg class="logo__image" role="img" alt="Круизы в Антарктику - узнай самые загадочные уголки планеты!"
+              width="70" height="38">
+              <use href="img/sprite_auto.svg#logo"></use>
+            </svg>
+          </a>
+
+          <section class="page-footer__nav main-nav main-nav--footer">
+            <h2 class="visually-hidden">Навигация по странице</h2>
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Преимущества</a> </li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Направления</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Ближайшие круизы</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="page-footer__right-column">
+          <section class="page-footer__social social">
+            <h2 class="visually-hidden">Мы в соцсетях</h2>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg class="social__icon social__icon--fb" width="11" height="20" role="img" alt="Фейсбук">
+                    <use href="img/sprite_auto.svg#fb"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg class="social__icon social__icon--instagram" width="20" height="20" role="img" alt="Фейсбук">
+                    <use href="img/sprite_auto.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg class="social__icon social__icon--twitter" width="20" height="16" role="img" alt="Фейсбук">
+                    <use href="img/sprite_auto.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
     </footer>
   </div>
 
@@ -76,7 +129,7 @@
   </div>
 
   <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>

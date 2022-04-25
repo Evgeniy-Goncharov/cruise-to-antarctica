@@ -22,11 +22,19 @@
   margin-right: 50px;
 }
 
+.page-header__nav {
+  margin-top: 10px;
+}
+
 @include vp-1279 {
   .page-header {
     padding-left: 45px;
     padding-right: 45px;
     padding-top: 20px;
+  }
+
+  .page-header__nav {
+    margin-top: 0;
   }
 }
 

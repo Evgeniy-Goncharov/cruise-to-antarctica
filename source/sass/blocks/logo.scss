@@ -1,4 +1,11 @@
 .logo {
+  display: block;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
   &--black {
     .logo__image {
       fill: $color-black-for-text;
