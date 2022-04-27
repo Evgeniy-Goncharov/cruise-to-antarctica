@@ -1,0 +1,154 @@
+.features {
+  background: $color-grey url("../../img/bg/features-bg.jpg") no-repeat center;
+  background-size: cover;
+  padding-top: 110px;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  padding-top: 24px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.features__item {
+  background-color: $color-background-white;
+  padding: 80px 30px 24px;
+  position: relative;
+
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 143%;
+  }
+}
+
+.features__icon {
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+
+  &--sheep {
+    width: 27px;
+    height: 32px;
+  }
+
+  &--ticks {
+    width: 38px;
+    height: 21px;
+    top: 35px;
+  }
+
+  &--boat {
+    width: 42px;
+    height: 15px;
+    top: 38px;
+  }
+}
+
+.features__card-heading {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 10px;
+}
+
+@include vp-1279 {
+  .features {
+    background-image: url("../../img/bg/features-bg--tablet.jpg");
+    padding-top: 90px;
+  }
+
+  .features__list {
+    gap: 30px;
+    padding-top: 37px;
+  }
+
+  .features__item {
+    padding: 70px 18px 20px 20px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .features__icon {
+    top: 25px;
+    left: 20px;
+
+    &--sheep {
+      width: 21px;
+      height: 26px;
+    }
+
+    &--ticks {
+      width: 33px;
+      height: 19px;
+      top: 29px;
+    }
+
+    &--boat {
+      width: 38px;
+      height: 13px;
+      top: 32px;
+    }
+  }
+
+  .features__card-heading {
+    line-height: 140%;
+    margin-bottom: 8px;
+  }
+}
+
+@include vp-767 {
+  .features {
+    background-image: url("../../img/bg/features-bg--tablet@2x.jpg");
+    padding-top: 57px;
+  }
+
+  .features__list {
+    display: block;
+    padding-top: 17px;
+  }
+
+  .features__item {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .features__icon {
+    margin-bottom: 20px;
+  }
+
+  .features__card-heading {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 9px;
+    max-width: 200px;
+  }
+}
+
+@include retina {
+  @media (min-width: 1280px) {
+    background-image: url("../../img/bg/features-bg@2x.jpg");
+  }
+
+  @include vp-1279 {
+    background-image: url("../../img/bg/features-bg--tablet@2x.jpg");
+  }
+
+  @include vp-767 {
+    background-image: url("../../img/bg/features-bg--mobile@2x.jpg");
+  }
+}

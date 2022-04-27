@@ -70,7 +70,16 @@
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
   color: $color-black-for-text;
-  background: url("../../img/bg/intro-bg.jpg") no-repeat center top;
   background-size: 100% 650px;
+}
+
+.mobile-only {
+  display: none;
+
+  @media (max-width: 375px) {
+    display: inherit!important;
+  }
 }

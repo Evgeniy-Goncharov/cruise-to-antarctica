@@ -23,7 +23,7 @@
 
         <button class="menu-button menu-button--no-js" aria-label="Открыть меню"></button>
 
-        <nav class="page-header__nav main-nav main-nav--no-js">
+        <nav class="page-header__nav main-nav main-nav--mobile-menu main-nav--no-js">
           <a class="main-nav__logo logo logo--black">
             <svg class="logo__image" role="img" alt="Круизы в Антарктику - узнай самые загадочные уголки планеты!"
               width="70" height="38">
@@ -40,7 +40,84 @@
         </nav>
       </div>
     </header>
+
     <main>
+      <section class="intro">
+        <div class="intro__wrapper container">
+          <h1 class="intro__heading page-heading">Круизы в&nbsp;Антарктику</h1>
+          <p class="intro__text">Волшебный мир айсбергов и пингвинов</p>
+        </div>
+      </section>
+
+      <section class="travel section container">
+        <div class="travel__left-column">
+          <h2 class="travel__heading section-heading">Путешествие на край Земли</h2>
+          <p class="travel__text">
+            Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш
+            круизный
+            лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов,
+            китов,
+            морских котиков и многое другое.
+          </p>
+        </div>
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)"
+            srcset="img/content/penguins--mobile.webp 1x, img/content/penguins--mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1279px)"
+            srcset="img/content/penguins--tablet.webp 1x, img/content/penguins--tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/content/penguins.webp 1x, img/content/penguins@2x.webp 2x">
+          <source media="(max-width: 767px)"
+            srcset="img/content/penguins--mobile.jpg 1x, img/content/penguins--mobile@2x.jpg 2x">
+          <source media="(max-width: 1279px)"
+            srcset="img/content/penguins--tablet.jpg 1x, img/content/penguins--tablet@2x.jpg 2x">
+          <img class="travel__image" src="img/content/penguins.jpg" srcset="img/content/penguins@2x.jpg 2x" width="560"
+            height="301" alt="3 антарктических пингвина на снежных просторах">
+        </picture>
+      </section>
+
+      <section class="features section">
+        <div class="container">
+          <h2 class="section-heading section-heading--center">Преимущества</h2>
+
+          <ul class="features__list">
+            <li class="features__item">
+              <svg class="features__icon features__icon--sheep" role="img" width="27" height="32">
+                <use href="img/sprite_auto.svg#sheep"></use>
+              </svg>
+
+              <h3 class="features__card-heading">Небольшой круизный&nbsp;лайнер</h3>
+              <p>
+                Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и&nbsp;очередей и&nbsp;даст
+                возможность насладиться видами и&nbsp;природой.
+              </p>
+            </li>
+
+            <li class="features__item">
+              <svg class="features__icon features__icon--ticks" role="img" width="38" height="21">
+                <use href="img/sprite_auto.svg#ticks"></use>
+              </svg>
+
+              <h3 class="features__card-heading">Система все&nbsp;включено</h3>
+              <p>
+                Все наши круизы работают<br>
+                по&nbsp;системе “Все&nbsp;Включено”. Великолепные блюда и&nbsp;безлимитный бар доступны для&nbsp;вас 24&nbsp;часа.
+              </p>
+            </li>
+
+            <li class="features__item">
+              <svg class="features__icon features__icon--boat" role="img" width="42" height="15">
+                <use href="img/sprite_auto.svg#boat"></use>
+              </svg>
+
+              <h3 class="features__card-heading">Экскурсионные туры на Zodiac</h3>
+              <p>
+                Экскурсионные туры к&nbsp;берегам Антарктиды совершаются<br class="mobile-only"> на оборудованных лодках<br class="mobile-only"> типа<br> Zodiac в&nbsp;сопровождении
+                опытных экскурсоводов.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
     </main>
 
