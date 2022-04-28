@@ -1,7 +1,10 @@
 .btn {
   display: inline-flex;
+  justify-content: center;
+  text-align: center;
   margin: 10px 0;
   padding: 10px 20px;
+  box-sizing: border-box;
 
   color: $color-default-white;
 
@@ -13,6 +16,15 @@
 
   &--red {
     background-color: $color-torch-red;
+  }
+
+  &--white {
+    background-color: $color-background-white;
+    color: $color-black-for-text;
+  }
+
+  &--text-bold {
+    font-weight: 600;
   }
 
   &:disabled {

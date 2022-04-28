@@ -11,12 +11,17 @@
     margin-right: auto;
   }
 
+
+
   @include vp-1279 {
     font-size: 26px;
     line-height: 140%;
     margin-bottom: 0;
-    max-width: 205px;
     margin-bottom: 15px;
+
+    &--tablet-w-205 {
+      max-width: 205px;
+    }
   }
 
   @include vp-767 {

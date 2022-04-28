@@ -116,6 +116,8 @@
   .features__list {
     display: block;
     padding-top: 17px;
+    max-width: 290px;
+    margin: 0 auto;
   }
 
   .features__item {
@@ -141,14 +143,20 @@
 
 @include retina {
   @media (min-width: 1280px) {
-    background-image: url("../../img/bg/features-bg@2x.jpg");
+    .features {
+      background-image: url("../../img/bg/features-bg@2x.jpg");
+    }
   }
 
   @include vp-1279 {
-    background-image: url("../../img/bg/features-bg--tablet@2x.jpg");
+    .features {
+      background-image: url("../../img/bg/features-bg--tablet@2x.jpg");
+    }
   }
 
   @include vp-767 {
-    background-image: url("../../img/bg/features-bg--mobile@2x.jpg");
+    .features {
+      background-image: url("../../img/bg/features-bg--mobile@2x.jpg");
+    }
   }
 }

@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
+  padding-top: 120px;
 }
 
 .travel__left-column {
@@ -25,6 +26,7 @@
 @include vp-1279 {
   .travel {
     gap: 30px;
+    padding-bottom: 94px;
   }
 
   .travel__left-column {
