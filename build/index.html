@@ -218,7 +218,8 @@
                 <h3 class="cruises__description-heading">Круиз "Атлантис"</h3>
                 <dl class="cruises__description-list">
                   <dt class="cruises__description-item">Маршрут</dt>
-                  <dd class="cruises__description-details">Аргентина - Южная Георгия и Южные Сандвичевы Острова - Антарктида</dd>
+                  <dd class="cruises__description-details">Аргентина - Южная Георгия и Южные Сандвичевы Острова -
+                    Антарктида</dd>
                   <dt class="cruises__description-item">Порт отправления</dt>
                   <dd class="cruises__description-details">Ушуайя</dd>
                   <dt class="cruises__description-item">Продолжительность</dt>
@@ -288,7 +289,8 @@
                 <h3 class="cruises__description-heading">Круиз "Олимпия"</h3>
                 <dl class="cruises__description-list">
                   <dt class="cruises__description-item">Маршрут</dt>
-                  <dd class="cruises__description-details">Аргентина - Фолклендские острова - Южная Георгия - Антарктида</dd>
+                  <dd class="cruises__description-details">Аргентина - Фолклендские острова - Южная Георгия - Антарктида
+                  </dd>
                   <dt class="cruises__description-item">Порт отправления</dt>
                   <dd class="cruises__description-details">Ушуайя</dd>
                   <dt class="cruises__description-item">Продолжительность</dt>
@@ -406,6 +408,45 @@
               </div>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section class="booking section">
+        <div class="container">
+          <div class="booking__wrapper">
+            <div class="booking__left-column">
+              <h2 class="booking__heading">Раннее бронирование</h2>
+              <p class="booking__text">
+                Забронируйте тур<br class="mobile-only"> за 3-6 месяцев до даты выезда и сэкономьте до 50%
+              </p>
+            </div>
+
+            <form class="form" method="POST" action="">
+              <h3 class="form__title">Оставьте заявку<br class="mobile-only"> и&nbsp;мы свяжемся с вами<br class="mobile-only"> в ближайшее время</h3>
+              <label class="form__label">
+                <span class="visually-hidden">Ваше Имя</span>
+                <input class="form__input" type="text" name="name" placeholder="Имя" required>
+              </label>
+
+              <label class="form__label">
+                <span class="visually-hidden">Ваш телефон</span>
+                <input class="form__input" type="phone" name="phone" placeholder="Телефон" required>
+              </label>
+
+              <label class="form__label">
+                <span class="visually-hidden">Ваша электронная почта</span>
+                <input class="form__input" type="email" name="email" placeholder="Email" required>
+              </label>
+
+              <label class="form__label form__label--checkbox">
+                <input class="visually-hidden" type="checkbox" name="privace" required>
+                <span class="form__check-icon"></span>
+                Я согласен на обработку моих&nbsp;персональных данных
+              </label>
+
+              <button class="form__submit-button btn btn--white btn--text-bold btn--full-width btn--large" type="submit">Оставить заявку</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
