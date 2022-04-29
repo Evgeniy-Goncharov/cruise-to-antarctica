@@ -1,0 +1,147 @@
+.contacts {
+  padding-top: 120px;
+}
+
+.contacts__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.contacts__left-column {
+  position: relative;
+}
+
+.contacts__image {
+  width: 100%;
+  height: 306px;
+  object-fit: cover;
+}
+
+.contacts__map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 306px;
+}
+
+.contacts__right-column {
+  align-self: center;
+  padding-left: 60px;
+}
+
+.contacts__heading {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.contacts__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin: 0;
+  padding: 0;
+  padding-left: 28px;
+  position: relative;
+  margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+
+  &--address::before {
+    width: 18px;
+    height: 22px;
+    top: 0;
+    background: url("../../img/svg/mark.svg") no-repeat center;
+  }
+
+  &--phone::before {
+    top: 1px;
+    width: 18px;
+    height: 18px;
+    background: url("../../img/svg/phone.svg") no-repeat center;
+  }
+}
+
+@include vp-1279 {
+  .contacts {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .contacts__wrapper {
+    gap: 30px;
+  }
+
+  .contacts__image,
+  .contacts__map {
+    height: 335px;
+  }
+
+  .contacts__right-column {
+    padding-left: 0;
+  }
+
+  .contacts__heading {
+    margin-bottom: 28px;
+  }
+
+  .contacts__text {
+    &--address::before {
+      top: 3px;
+    }
+
+    &--phone::before {
+      top: -1px;
+    }
+  }
+}
+
+@include vp-767 {
+  .contacts {
+    padding-bottom: 62px;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .contacts__left-column {
+    order: 2;
+  }
+
+  .contacts__image,
+  .contacts__map {
+    height: 316px;
+  }
+
+  .contacts__right-column {
+    margin-bottom: 40px;
+  }
+
+  .contacts__text {
+    &--address::before {
+      top: 5px;
+    }
+
+    &--phobe::before {
+      top: 0;
+    }
+  }
+}

@@ -1386,6 +1386,86 @@ input:checked ~ .form__check-icon::before {
   margin-top: 32px;
 }
 
+.contacts {
+  padding-top: 120px;
+}
+
+.contacts__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.contacts__left-column {
+  position: relative;
+}
+
+.contacts__image {
+  width: 100%;
+  height: 306px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.contacts__map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 306px;
+}
+
+.contacts__right-column {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  padding-left: 60px;
+}
+
+.contacts__heading {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.contacts__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin: 0;
+  padding: 0;
+  padding-left: 28px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.contacts__text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.contacts__text--address::before {
+  width: 18px;
+  height: 22px;
+  top: 0;
+  background: url("../../img/svg/mark.svg") no-repeat center;
+}
+
+.contacts__text--phone::before {
+  top: 1px;
+  width: 18px;
+  height: 18px;
+  background: url("../../img/svg/phone.svg") no-repeat center;
+}
+
 .page-footer {
   background-color: #011C40;
   padding-top: 50px;
@@ -1644,6 +1724,7 @@ input:checked ~ .form__check-icon::before {
     background-image: url("../../img/bg/booking-bg--tablet.jpg");
     text-align: center;
     padding-top: 87px;
+    padding-bottom: 100px;
   }
 
   .booking__wrapper {
@@ -1663,6 +1744,40 @@ input:checked ~ .form__check-icon::before {
 
   .booking__text {
     margin: 0 auto;
+  }
+
+  .contacts {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .contacts br {
+    display: none;
+  }
+
+  .contacts__wrapper {
+    gap: 30px;
+  }
+
+  .contacts__image,
+  .contacts__map {
+    height: 335px;
+  }
+
+  .contacts__right-column {
+    padding-left: 0;
+  }
+
+  .contacts__heading {
+    margin-bottom: 28px;
+  }
+
+  .contacts__text--address::before {
+    top: 3px;
+  }
+
+  .contacts__text--phone::before {
+    top: -1px;
   }
 
   .page-footer {
@@ -1965,6 +2080,44 @@ input:checked ~ .form__check-icon::before {
 
   .form__submit-button {
     margin-top: 26px;
+  }
+
+  .contacts {
+    padding-bottom: 62px;
+  }
+
+  .contacts__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .contacts__left-column {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .contacts__image,
+  .contacts__map {
+    height: 316px;
+  }
+
+  .contacts__right-column {
+    margin-bottom: 40px;
+  }
+
+  .contacts__text--address::before {
+    top: 5px;
+  }
+
+  .contacts__text--phobe::before {
+    top: 0;
   }
 
   .page-footer {
