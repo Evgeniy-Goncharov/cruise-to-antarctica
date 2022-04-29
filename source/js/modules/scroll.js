@@ -1,0 +1,15 @@
+const links = document.querySelectorAll('a[href^="#"]');
+
+if (links) {
+  for (let link of links) {
+    link.addEventListener('click', (evt) => {
+      evt.preventDefault();
+      const id = link.getAttribute('href');
+
+      document.querySelector(id).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    });
+  }
+}

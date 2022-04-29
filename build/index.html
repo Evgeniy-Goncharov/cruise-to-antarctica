@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Учебный проект для Акселератора - &laquo;Круизы в Антарктику&raquo;">
   <title>HTML-Academy Круизы в Антарктику</title>
+  <link rel="preload" href="fonts/montserratregular.woff2" as="font">
+  <link rel="preload" href="fonts/montserratmedium.woff2" as="font">
+  <link rel="preload" href="fonts/montserratsemibold.woff2" as="font">
+  <link rel="preload" href="fonts/montserratbold.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -32,10 +36,10 @@
           </a>
 
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Преимущества</a> </li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#features">Преимущества</a> </li>
             <li class="main-nav__item"><a class="main-nav__link" href="#">Направления</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Ближайшие круизы</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#cruises">Ближайшие круизы</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#contacts">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -75,7 +79,7 @@
         </picture>
       </section>
 
-      <section class="features section">
+      <section class="features section" id="features">
         <div class="container">
           <h2 class="section-heading section-heading--center">Преимущества</h2>
 
@@ -122,7 +126,7 @@
         </div>
       </section>
 
-      <section class="cruises section">
+      <section class="cruises section" id="cruises">
         <div class="container">
           <h2 class="section-heading section-heading--center">Ближайшие круизы</h2>
           <ul class="cruises__list">
@@ -452,7 +456,7 @@
         </div>
       </section>
 
-      <section class="contacts section">
+      <section class="contacts section" id="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="contacts__wrapper container">
           <div class="contacts__left-column">
@@ -479,7 +483,8 @@
             <h3 class="contacts__heading">
               У вас ещё остались вопросы или сомнения?<br> Приезжайте к&nbsp;нам в&nbsp;офис и мы вам все расскажем.
             </h3>
-            <p class="contacts__text contacts__text--address">г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8</p>
+            <p class="contacts__text contacts__text--address">г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8
+            </p>
             <a class="contacts__text contacts__text--phone" href="tel:88002000000">8-800-200-00-00</a>
           </div>
         </div>
@@ -499,10 +504,10 @@
           <section class="page-footer__nav main-nav main-nav--footer">
             <h2 class="visually-hidden">Навигация по странице</h2>
             <ul class="main-nav__list">
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Преимущества</a> </li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#features">Преимущества</a> </li>
               <li class="main-nav__item"><a class="main-nav__link" href="#">Направления</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Ближайшие круизы</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#cruises">Ближайшие круизы</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#contacts">Контакты</a></li>
             </ul>
           </section>
         </div>
@@ -539,35 +544,6 @@
         </div>
       </div>
     </footer>
-  </div>
-
-  <!-- Модалки -->
-  <div class="modal modal--preload" data-modal="feedback">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Обычная модалка</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
   </div>
 
   <script src="js/vendor.min.js"></script>
