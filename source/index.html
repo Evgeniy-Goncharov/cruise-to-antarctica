@@ -16,20 +16,20 @@
 
 <body class="page__body">
   <div class="wrapper">
-    <header class="page-header no-js">
+    <header class="page-header no-js"  data-menu="mobile-menu">
       <div class="page-header__flex">
         <a class="page-header__logo logo">
-          <svg class="logo__image" role="img" alt="Круизы в Антарктику - узнай самые загадочные уголки планеты!"
+          <svg class="logo__image" role="img" alt="Круизы в Антарктику - побывай в самых загадочных уголках планеты!"
             width="70" height="38">
             <use href="img/sprite_auto.svg#logo"></use>
           </svg>
         </a>
 
-        <button class="menu-button no-js" aria-label="Открыть меню"></button>
+        <button class="menu-button no-js" aria-label="Открыть меню"  data-menu="menu-button"></button>
 
-        <nav class="page-header__nav main-nav main-nav--mobile-menu no-js">
+        <nav class="page-header__nav main-nav main-nav--mobile-menu no-js" data-menu="mobile-menu">
           <a class="main-nav__logo logo logo--black">
-            <svg class="logo__image" role="img" alt="Круизы в Антарктику - узнай самые загадочные уголки планеты!"
+            <svg class="logo__image" role="img" alt="Круизы в Антарктику - побывай в самых загадочных уголках планеты!"
               width="70" height="38">
               <use href="img/sprite_auto.svg#logo"></use>
             </svg>
@@ -75,7 +75,7 @@
           <source media="(max-width: 1279px)"
             srcset="img/content/penguins--tablet.jpg 1x, img/content/penguins--tablet@2x.jpg 2x">
           <img class="travel__image" src="img/content/penguins.jpg" srcset="img/content/penguins@2x.jpg 2x" width="560"
-            height="301" alt="3 антарктических пингвина на снежных просторах">
+            height="301" alt="3 пингвина на снежных просторах Антарктики">
         </picture>
       </section>
 
@@ -85,7 +85,7 @@
 
           <ul class="features__list">
             <li class="features__item">
-              <svg class="features__icon features__icon--sheep" role="img" width="27" height="32">
+              <svg class="features__icon features__icon--sheep" width="27" height="32">
                 <use href="img/sprite_auto.svg#sheep"></use>
               </svg>
 
@@ -98,7 +98,7 @@
             </li>
 
             <li class="features__item">
-              <svg class="features__icon features__icon--ticks" role="img" width="38" height="21">
+              <svg class="features__icon features__icon--ticks" width="38" height="21">
                 <use href="img/sprite_auto.svg#ticks"></use>
               </svg>
 
@@ -111,7 +111,7 @@
             </li>
 
             <li class="features__item">
-              <svg class="features__icon features__icon--boat" role="img" width="42" height="15">
+              <svg class="features__icon features__icon--boat" width="42" height="15">
                 <use href="img/sprite_auto.svg#boat"></use>
               </svg>
 
@@ -213,7 +213,7 @@
                   <source media="(max-width: 1279px)"
                     srcset="img/cruises/atlantis--tablet.jpg 1x, img/cruises/atlantis--tablet@2x.jpg 2x">
                   <img class="cruises__image" src="img/cruises/atlantis.jpg" srcset="img/cruises/atlantis@2x.jpg 2x"
-                    alt="Замерзшее побережье на фоне черной Антарктической скалы" width="260" height="386">
+                    alt="айсберги в Антарктических водах" width="260" height="386">
                 </picture>
                 <figcaption class="cruises__figcaption">Круиз "Атлантис"</figcaption>
               </figure>
@@ -249,7 +249,7 @@
                   <source media="(max-width: 1279px)"
                     srcset="img/cruises/odysseus--tablet.jpg 1x, img/cruises/odysseus--tablet@2x.jpg 2x">
                   <img class="cruises__image" src="img/cruises/odysseus.jpg" srcset="img/cruises/odysseus@2x.jpg 2x"
-                    alt="Замерзшее побережье на фоне черной Антарктической скалы" width="260" height="386">
+                    alt="Антарктическое озеро, окруженное скалистым берегом" width="260" height="386">
                 </picture>
                 <figcaption class="cruises__figcaption">Круиз "Одиссей"</figcaption>
               </figure>
@@ -284,7 +284,7 @@
                   <source media="(max-width: 1279px)"
                     srcset="img/cruises/olympia--tablet.jpg 1x, img/cruises/olympia--tablet@2x.jpg 2x">
                   <img class="cruises__image" src="img/cruises/olympia.jpg" srcset="img/cruises/olympia@2x.jpg 2x"
-                    alt="Замерзшее побережье на фоне черной Антарктической скалы" width="260" height="386">
+                    alt="Группа пингвинов на берегу" width="260" height="386">
                 </picture>
                 <figcaption class="cruises__figcaption">Круиз "Олимпия"</figcaption>
               </figure>
@@ -320,7 +320,7 @@
                   <source media="(max-width: 1279px)"
                     srcset="img/cruises/avrora--tablet.jpg 1x, img/cruises/avrora--tablet@2x.jpg 2x">
                   <img class="cruises__image" src="img/cruises/avrora.jpg" srcset="img/cruises/avrora@2x.jpg 2x"
-                    alt="Замерзшее побережье на фоне черной Антарктической скалы" width="260" height="386">
+                    alt="Замерзшее побережье океана" width="260" height="386">
                 </picture>
                 <figcaption class="cruises__figcaption">Круиз "Аврора"</figcaption>
               </figure>
@@ -355,7 +355,7 @@
                   <source media="(max-width: 1279px)"
                     srcset="img/cruises/leonor--tablet.jpg 1x, img/cruises/leonor--tablet@2x.jpg 2x">
                   <img class="cruises__image" src="img/cruises/leonor.jpg" srcset="img/cruises/leonor@2x.jpg 2x"
-                    alt="Замерзшее побережье на фоне черной Антарктической скалы" width="260" height="386">
+                    alt="Парусная лодка в водах Антарктики" width="260" height="386">
                 </picture>
                 <figcaption class="cruises__figcaption">Круиз "Леонор"</figcaption>
               </figure>
@@ -390,7 +390,7 @@
                   <source media="(max-width: 1279px)"
                     srcset="img/cruises/minion--tablet.jpg 1x, img/cruises/minion--tablet@2x.jpg 2x">
                   <img class="cruises__image" src="img/cruises/minion.jpg" srcset="img/cruises/minion@2x.jpg 2x"
-                    alt="Замерзшее побережье на фоне черной Антарктической скалы" width="260" height="386">
+                    alt="Группа  туристов на Антарктическом берегу" width="260" height="386">
                 </picture>
                 <figcaption class="cruises__figcaption">Круиз "Минион - 1"</figcaption>
               </figure>
@@ -495,7 +495,7 @@
       <div class="page-footer__flex">
         <div class="page-footer__left-column">
           <a class="page-footer__logo logo">
-            <svg class="logo__image" role="img" alt="Круизы в Антарктику - узнай самые загадочные уголки планеты!"
+            <svg class="logo__image" role="img" alt="Круизы в Антарктику - повывай в самых загадочных уголках планеты!"
               width="70" height="38">
               <use href="img/sprite_auto.svg#logo"></use>
             </svg>

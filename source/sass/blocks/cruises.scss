@@ -5,15 +5,35 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+
+  @include vp-1279 {
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 37px;
+  }
+
+  @include vp-1023 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    max-width: 270px;
+    padding: 18px 0 0;
+    margin: 0 auto;
+  }
 }
 
 .cruises__item {
   position: relative;
 
-  &:hover,
-  &:focus {
-    .cruises__description {
-      display: block;
+  @media (hover: hover),
+  screen and (min-width: 0\0) {
+
+    &:hover,
+    &:focus {
+      .cruises__description {
+        display: block;
+      }
     }
   }
 }
@@ -41,6 +61,14 @@
   color: $color-background-white;
   padding-left: 30px;
   padding-right: 30px;
+
+  @include vp-1279 {
+    padding: 0 30px 27px 35px;
+  }
+
+  @include vp-767 {
+    padding: 0 25px 17px;
+  }
 }
 
 .cruises__description {
@@ -89,32 +117,3 @@
   bottom: 25px;
 }
 
-@include vp-1279 {
-  .cruises__list {
-    grid-template-columns: repeat(3, 1fr);
-    padding-top: 37px;
-  }
-
-  .cruises__figcaption {
-    padding: 0 30px 27px 35px;
-  }
-}
-
-@include vp-1023 {
-  .cruises__list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@include vp-767 {
-  .cruises__list {
-    grid-template-columns: 1fr;
-    max-width: 270px;
-    padding: 18px 0 0;
-    margin: 0 auto;
-  }
-
-  .cruises__figcaption {
-    padding: 0 25px 17px;
-  }
-}

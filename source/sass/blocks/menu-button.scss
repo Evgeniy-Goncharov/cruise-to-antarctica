@@ -11,11 +11,6 @@
   z-index: 3;
   cursor: pointer;
 
-  &:hover,
-  &:focus {
-    background-color: transparent;
-  }
-
   &::before {
     content: "";
     width: 24px;
@@ -62,10 +57,8 @@
       transform: rotate(-45deg);
     }
   }
-}
 
-@include vp-767 {
-  .menu-button {
+  @include vp-767 {
     display: block;
 
     &.no-js {
@@ -73,4 +66,5 @@
     }
   }
 }
+
 
