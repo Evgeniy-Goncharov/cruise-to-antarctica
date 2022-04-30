@@ -30,7 +30,7 @@
     box-shadow: 0 6px 0 0 $color-background-white, 0 -6px 0 0 $color-background-white;
   }
 
-  &--nav-open {
+  &.menu-open {
     background-color: transparent;
     right: 10px;
 
@@ -68,7 +68,7 @@
   .menu-button {
     display: block;
 
-    &--no-js {
+    &.no-js {
       display: none;
     }
   }

@@ -91,14 +91,14 @@
       }
     }
 
-    &--no-js {
+    &.no-js {
       width: 100%;
       min-height: min-content;
       position: relative;
     }
 
-    &--nav-open,
-    &--no-js {
+    &.menu-open,
+    &.no-js {
       padding: 71px 25px 20px;
 
       .main-nav__logo {
@@ -106,7 +106,7 @@
       }
     }
 
-    &--nav-open {
+    &.menu-open {
       width: 285px;
     }
   }

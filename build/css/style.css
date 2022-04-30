@@ -971,18 +971,18 @@ button,
   box-shadow: 0 6px 0 0 #F9FBFD, 0 -6px 0 0 #F9FBFD;
 }
 
-.menu-button--nav-open {
+.menu-button.menu-open {
   background-color: transparent;
   right: 10px;
 }
 
-.menu-button--nav-open:hover,
-.menu-button--nav-open:focus {
+.menu-button.menu-open:hover,
+.menu-button.menu-open:focus {
   background-color: transparent;
 }
 
-.menu-button--nav-open::before,
-.menu-button--nav-open::after {
+.menu-button.menu-open::before,
+.menu-button.menu-open::after {
   content: "";
   width: 18px;
   height: 2px;
@@ -997,13 +997,13 @@ button,
   box-shadow: none;
 }
 
-.menu-button--nav-open::before {
+.menu-button.menu-open::before {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-.menu-button--nav-open::after {
+.menu-button.menu-open::after {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
@@ -1867,15 +1867,16 @@ input:checked ~ .form__check-icon::before {
     padding: 20px 15px;
   }
 
-  .page-header--no-js {
+  .page-header.no-js {
     padding: 0;
+    position: relative;
   }
 
-  .page-header--no-js .page-header__logo {
+  .page-header.no-js .page-header__logo {
     display: none;
   }
 
-  .page-header--nav-open .page-header__logo {
+  .page-header.menu-open .page-header__logo {
     display: none;
   }
 
@@ -1921,7 +1922,7 @@ input:checked ~ .form__check-icon::before {
     color: #F9FBFD;
   }
 
-  .main-nav--no-js {
+  .main-nav.no-js {
     width: 100%;
     min-height: -webkit-min-content;
     min-height: -moz-min-content;
@@ -1929,17 +1930,17 @@ input:checked ~ .form__check-icon::before {
     position: relative;
   }
 
-  .main-nav--nav-open,
-  .main-nav--no-js {
+  .main-nav.menu-open,
+  .main-nav.no-js {
     padding: 71px 25px 20px;
   }
 
-  .main-nav--nav-open .main-nav__logo,
-  .main-nav--no-js .main-nav__logo {
+  .main-nav.menu-open .main-nav__logo,
+  .main-nav.no-js .main-nav__logo {
     display: block;
   }
 
-  .main-nav--nav-open {
+  .main-nav.menu-open {
     width: 285px;
   }
 
@@ -1963,7 +1964,7 @@ input:checked ~ .form__check-icon::before {
     display: block;
   }
 
-  .menu-button--no-js {
+  .menu-button.no-js {
     display: none;
   }
 

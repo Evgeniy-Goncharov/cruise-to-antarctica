@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import './modules/menu-button.js';
-import './modules/scroll.js';
+import {initMenu} from './modules/menu-button.js';
+import {initScroll} from './modules/scroll.js';
 
 // ---------------------------------
 
@@ -11,6 +11,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  initMenu();
+  initScroll();
 
   // Modules
   // ---------------------------------

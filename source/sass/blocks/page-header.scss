@@ -42,15 +42,16 @@
   .page-header {
     padding: 20px 15px;
 
-    &--no-js {
+    &.no-js {
       padding: 0;
+      position: relative;
 
       .page-header__logo {
         display: none;
       }
     }
 
-    &--nav-open {
+    &.menu-open {
       .page-header__logo {
         display: none;
       }

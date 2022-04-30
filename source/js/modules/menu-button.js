@@ -2,30 +2,42 @@ const header = document.querySelector('.page-header');
 const menuButton = header.querySelector('.menu-button');
 const nav = header.querySelector('.main-nav');
 
-let isMenuOpen = false;
+const initMenu = () => {
+  let isMenuOpen = false;
 
-header.classList.remove('page-header--no-js');
-menuButton.classList.remove('menu-button--no-js');
-nav.classList.remove('main-nav--no-js');
+  header.classList.remove('no-js');
+  menuButton.classList.remove('no-js');
+  nav.classList.remove('no-js');
 
-const openMenu = () => {
-  header.classList.add('page-header--nav-open');
-  menuButton.classList.add('menu-button--nav-open');
-  nav.classList.add('main-nav--nav-open');
-  isMenuOpen = true;
+  const openMenu = () => {
+    header.classList.add('menu-open');
+    menuButton.classList.add('menu-open');
+    menuButton.ariaLabel = 'Закрыть меню';
+    nav.classList.add('menu-open');
+    isMenuOpen = true;
+    document.addEventListener('click', closeMenu);
+  };
+
+  const closeMenu = () => {
+    header.classList.remove('menu-open');
+    menuButton.classList.remove('menu-open');
+    menuButton.ariaLabel = 'Открыть меню';
+    nav.classList.remove('menu-open');
+    isMenuOpen = false;
+    document.removeEventListener('click', closeMenu);
+  };
+
+  closeMenu();
+
+  menuButton.addEventListener('click', (evt) => {
+    evt.stopPropagation();
+
+    if (isMenuOpen) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
 };
 
-const closeMenu = () => {
-  header.classList.remove('page-header--nav-open');
-  menuButton.classList.remove('menu-button--nav-open');
-  nav.classList.remove('main-nav--nav-open');
-  isMenuOpen = false;
-};
-
-menuButton.addEventListener('click', function () {
-  if (isMenuOpen) {
-    closeMenu();
-  } else {
-    openMenu();
-  }
-});
+export {initMenu};
