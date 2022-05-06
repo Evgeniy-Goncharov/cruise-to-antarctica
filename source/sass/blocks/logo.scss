@@ -1,15 +1,8 @@
 .logo {
   display: block;
 
-  &--black {
-    .logo__image {
-      fill: $color-black-for-text;
-    }
-  }
-
   @media (hover: hover),
-  screen and (min-width: 0\0) {
-
+    screen and (min-width: 0\0) {
     &:hover[href],
     &:focus[href] {
       opacity: 0.8;
@@ -21,7 +14,7 @@
   }
 }
 
-.logo__image {
+.logo svg {
   width: 70px;
   height: 38px;
   fill: $color-background-white;
@@ -36,4 +29,8 @@
     width: 42px;
     height: 22px;
   }
+}
+
+.logo--black svg {
+  fill: $color-black-for-text;
 }

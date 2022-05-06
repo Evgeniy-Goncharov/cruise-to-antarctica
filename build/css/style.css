@@ -638,7 +638,7 @@ button,
   line-height: 24px;
   font-weight: 400;
   font-style: normal;
-  color: #011C40;
+  color: #011c40;
   background-size: 100% 650px;
 }
 
@@ -700,8 +700,8 @@ button,
 }
 
 .btn--white {
-  background-color: #F9FBFD;
-  color: #011C40;
+  background-color: #f9fbfd;
+  color: #011c40;
 }
 
 .btn--text-bold {
@@ -760,14 +760,14 @@ button,
   display: block;
 }
 
-.logo--black .logo__image {
-  fill: #011C40;
-}
-
-.logo__image {
+.logo svg {
   width: 70px;
   height: 38px;
-  fill: #F9FBFD;
+  fill: #f9fbfd;
+}
+
+.logo--black svg {
+  fill: #011c40;
 }
 
 .main-nav {
@@ -802,17 +802,17 @@ button,
   flex-wrap: wrap;
 }
 
-.main-nav__item {
+.main-nav__list li {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.main-nav__item:not(:last-child) {
+.main-nav__list li:not(:last-child) {
   margin-right: 33px;
 }
 
-.main-nav__link {
-  color: #F9FBFD;
+.main-nav__list a {
+  color: #f9fbfd;
 }
 
 .menu-button {
@@ -833,15 +833,15 @@ button,
   content: "";
   width: 24px;
   height: 2px;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
   position: absolute;
   top: 0;
   bottom: 3px;
   left: 0;
   right: 0;
   margin: auto;
-  -webkit-box-shadow: 0 6px 0 0 #F9FBFD, 0 -6px 0 0 #F9FBFD;
-  box-shadow: 0 6px 0 0 #F9FBFD, 0 -6px 0 0 #F9FBFD;
+  -webkit-box-shadow: 0 6px 0 0 #f9fbfd, 0 -6px 0 0 #f9fbfd;
+  box-shadow: 0 6px 0 0 #f9fbfd, 0 -6px 0 0 #f9fbfd;
 }
 
 .menu-button.menu-open {
@@ -859,7 +859,7 @@ button,
   content: "";
   width: 18px;
   height: 2px;
-  background-color: #011C40;
+  background-color: #011c40;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -885,8 +885,8 @@ button,
 .intro {
   background: #2c39f2 url("../../img/bg/intro-bg.jpg") no-repeat center;
   background-size: cover;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .intro__wrapper {
@@ -906,11 +906,11 @@ button,
 }
 
 .intro__heading {
-  color: #F9FBFD;
+  color: #f9fbfd;
   font-weight: 700;
   font-size: 54px;
   line-height: 66px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   margin: -10px 0 10px 95px;
 }
 
@@ -921,8 +921,8 @@ button,
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  color: #F9FBFD;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #f9fbfd;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .travel {
@@ -948,12 +948,20 @@ button,
   justify-content: center;
 }
 
-.travel__text {
+.travel h2 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.travel p {
   margin: 0;
   padding: 0;
 }
 
-.travel__image {
+.travel img {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
@@ -979,9 +987,42 @@ button,
 }
 
 .features__item {
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
   padding: 80px 30px 24px;
   position: relative;
+}
+
+.features__item svg {
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.features__item--sheep svg {
+  width: 27px;
+  height: 32px;
+}
+
+.features__item--inclusive svg {
+  width: 38px;
+  height: 21px;
+  top: 35px;
+}
+
+.features__item--boat svg {
+  width: 42px;
+  height: 15px;
+  top: 38px;
+}
+
+.features__item h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 10px;
 }
 
 .features__item p {
@@ -989,39 +1030,6 @@ button,
   padding: 0;
   font-size: 14px;
   line-height: 143%;
-}
-
-.features__icon {
-  display: block;
-  position: absolute;
-  top: 30px;
-  left: 30px;
-}
-
-.features__icon--sheep {
-  width: 27px;
-  height: 32px;
-}
-
-.features__icon--ticks {
-  width: 38px;
-  height: 21px;
-  top: 35px;
-}
-
-.features__icon--boat {
-  width: 42px;
-  height: 15px;
-  top: 38px;
-}
-
-.features__card-heading {
-  margin: 0;
-  padding: 0;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 150%;
-  margin-bottom: 10px;
 }
 
 .cruises__list {
@@ -1039,18 +1047,18 @@ button,
   position: relative;
 }
 
-.cruises__image {
+.cruises__item figure {
+  margin: 0;
+  padding: 0;
+}
+
+.cruises__item img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.cruises__figure {
-  margin: 0;
-  padding: 0;
-}
-
-.cruises__figcaption {
+.cruises__item figcaption {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1059,7 +1067,7 @@ button,
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-  color: #F9FBFD;
+  color: #f9fbfd;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -1070,20 +1078,15 @@ button,
   left: 0;
   right: 0;
   min-height: 100%;
-  background-color: #011C40;
-  color: #F9FBFD;
-  padding: 29px 25px 70px;
+  background-color: #011c40;
+  color: #f9fbfd;
+  padding: 29px 25px 85px;
   font-size: 14px;
   line-height: 140%;
   display: none;
 }
 
-.cruises__description-list {
-  margin: 0;
-  padding: 0;
-}
-
-.cruises__description-heading {
+.cruises__description h3 {
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
@@ -1092,12 +1095,17 @@ button,
   margin-bottom: 14px;
 }
 
-.cruises__description-item {
+.cruises__description dl {
+  margin: 0;
+  padding: 0;
+}
+
+.cruises__description dt {
   font-weight: 500;
 }
 
-.cruises__description-details {
-  color: #D8D8D9;
+.cruises__description dd {
+  color: #d8ddd9;
   margin: 0;
   padding: 0;
   margin-bottom: 13px;
@@ -1107,7 +1115,7 @@ button,
   position: absolute;
   left: 25px;
   right: 25px;
-  bottom: 25px;
+  bottom: 35px;
 }
 
 .booking {
@@ -1134,7 +1142,7 @@ button,
   padding-right: 50px;
 }
 
-.booking__heading {
+.booking__left-column h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 150%;
@@ -1144,7 +1152,7 @@ button,
   margin-bottom: 8px;
 }
 
-.booking__text {
+.booking__left-column p {
   max-width: 352px;
   font-weight: 400;
   font-size: 18px;
@@ -1154,7 +1162,7 @@ button,
 }
 
 .form {
-  background-color: #011C40;
+  background-color: #011c40;
   margin: 0 auto;
   padding: 45px 50px 50px;
   width: 100%;
@@ -1164,75 +1172,59 @@ button,
   text-align: left;
 }
 
-.form__title {
+.form h3 {
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-  color: #F9FBFD;
+  color: #f9fbfd;
   margin: 0;
   padding: 0;
   margin-bottom: 26px;
 }
 
-.form__label {
-  display: block;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 130%;
-  color: #F9FBFD;
+.form__field span,
+.form__field--checkbox input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
 }
 
-.form__label--checkbox {
+.form__field:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.form__field--checkbox:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.form__field--checkbox label {
   padding-left: 23px;
   padding-top: 3px;
   position: relative;
 }
 
-.form__label:not(:last-of-type) {
-  margin-bottom: 20px;
-}
-
-.form__input {
-  width: 100%;
-  border: none;
-  padding: 11px 16px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 150%;
-  color: #011C40;
-}
-
-.form__input::-webkit-input-placeholder {
-  color: rgba(1, 28, 64, 0.7);
-}
-
-.form__input::-moz-placeholder {
-  color: rgba(1, 28, 64, 0.7);
-}
-
-.form__input:-ms-input-placeholder {
-  color: rgba(1, 28, 64, 0.7);
-}
-
-.form__input::-ms-input-placeholder {
-  color: rgba(1, 28, 64, 0.7);
-}
-
-.form__input::placeholder {
-  color: rgba(1, 28, 64, 0.7);
-}
-
-.form__check-icon {
+.form__field--checkbox span {
   position: absolute;
   left: 0;
   top: 0;
   display: inline-block;
   width: 18px;
   height: 18px;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
+  clip: auto;
+  -webkit-clip-path: none;
+  clip-path: none;
 }
 
-.form__check-icon::before {
+.form__field--checkbox span::before {
   content: "";
   width: 10px;
   height: 6px;
@@ -1246,12 +1238,75 @@ button,
   display: none;
 }
 
-input:checked ~ .form__check-icon::before {
+.form__field--checkbox input:checked ~ span::before {
   display: block;
 }
 
-.form__submit-button {
-  margin-top: 32px;
+.form label {
+  display: block;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 130%;
+  color: #f9fbfd;
+}
+
+.form input {
+  width: 100%;
+  border: none;
+  padding: 11px 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #011c40;
+}
+
+.form input::-webkit-input-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.form input::-moz-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.form input:-ms-input-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.form input::-ms-input-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.form input::placeholder {
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.form button[type="submit"],
+.form input[type="submit"] {
+  min-height: 43px;
+  font-size: 14px;
+  line-height: 150%;
+  width: 100%;
+  font-weight: 600;
+  background-color: #f9fbfd;
+  color: #011c40;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0;
+  cursor: pointer;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .contacts {
@@ -1270,7 +1325,7 @@ input:checked ~ .form__check-icon::before {
   position: relative;
 }
 
-.contacts__image {
+.contacts__left-column img {
   width: 100%;
   height: 306px;
   -o-object-fit: cover;
@@ -1294,7 +1349,7 @@ input:checked ~ .form__check-icon::before {
   padding-left: 60px;
 }
 
-.contacts__heading {
+.contacts__right-column h3 {
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
@@ -1303,7 +1358,8 @@ input:checked ~ .form__check-icon::before {
   margin-bottom: 30px;
 }
 
-.contacts__text {
+.contacts__right-column p,
+.contacts__right-column a {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -1314,20 +1370,19 @@ input:checked ~ .form__check-icon::before {
   margin-bottom: 20px;
 }
 
-.contacts__text::before {
+.contacts__right-column p::before,
+.contacts__right-column a::before {
   content: "";
   position: absolute;
   left: 0;
-}
-
-.contacts__text--address::before {
   width: 18px;
   height: 22px;
   top: 0;
   background: url("../../img/svg/mark.svg") no-repeat center;
 }
 
-.contacts__text--phone::before {
+.contacts__right-column p[href^="tel:"]::before,
+.contacts__right-column a[href^="tel:"]::before {
   top: 1px;
   width: 18px;
   height: 18px;
@@ -1335,7 +1390,7 @@ input:checked ~ .form__check-icon::before {
 }
 
 .page-footer {
-  background-color: #011C40;
+  background-color: #011c40;
   padding-top: 50px;
   padding-bottom: 43px;
 }
@@ -1427,8 +1482,8 @@ input:checked ~ .form__check-icon::before {
     opacity: 0.8;
   }
 
-  .main-nav__link:hover,
-  .main-nav__link:focus {
+  .main-nav__list a:hover,
+  .main-nav__list a:focus {
     opacity: 0.8;
   }
 
@@ -1437,8 +1492,17 @@ input:checked ~ .form__check-icon::before {
     display: block;
   }
 
-  .contacts__text--phone:hover,
-  .contacts__text--phone:focus {
+  .form button[type="submit"]:hover,
+  .form button[type="submit"]:focus,
+  .form input[type="submit"]:hover,
+  .form input[type="submit"]:focus {
+    opacity: 0.8;
+  }
+
+  .contacts__right-column p[href^="tel:"]:hover,
+  .contacts__right-column p[href^="tel:"]:focus,
+  .contacts__right-column a[href^="tel:"]:hover,
+  .contacts__right-column a[href^="tel:"]:focus {
     opacity: 0.8;
   }
 
@@ -1471,12 +1535,7 @@ input:checked ~ .form__check-icon::before {
   .section-heading {
     font-size: 26px;
     line-height: 140%;
-    margin-bottom: 0;
     margin-bottom: 15px;
-  }
-
-  .section-heading--tablet-w-205 {
-    max-width: 205px;
   }
 
   .page-header {
@@ -1489,7 +1548,7 @@ input:checked ~ .form__check-icon::before {
     margin-top: 0;
   }
 
-  .logo__image {
+  .logo svg {
     width: 38px;
     height: 20px;
   }
@@ -1506,7 +1565,7 @@ input:checked ~ .form__check-icon::before {
     line-height: 15px;
   }
 
-  .main-nav__item:not(:last-child) {
+  .main-nav__list li:not(:last-child) {
     margin-right: 23px;
   }
 
@@ -1546,12 +1605,19 @@ input:checked ~ .form__check-icon::before {
     justify-content: flex-start;
   }
 
-  .travel__text {
+  .travel h2 {
+    font-size: 26px;
+    line-height: 140%;
+    max-width: 205px;
+    margin-bottom: 16px;
+  }
+
+  .travel p {
     font-size: 16px;
     line-height: 150%;
   }
 
-  .travel__image {
+  .travel img {
     margin-top: 10px;
   }
 
@@ -1569,33 +1635,35 @@ input:checked ~ .form__check-icon::before {
     padding: 70px 18px 20px 20px;
   }
 
-  .features__item br {
+  .features__item br:not(.mobile-only) {
     display: none;
   }
 
-  .features__icon {
-    top: 25px;
+  .features__item svg {
     left: 20px;
   }
 
-  .features__icon--sheep {
+  .features__item--sheep svg {
     width: 21px;
     height: 26px;
+    top: 24px;
   }
 
-  .features__icon--ticks {
+  .features__item--inclusive svg {
     width: 33px;
     height: 19px;
-    top: 29px;
+    left: 18px;
+    top: 28px;
   }
 
-  .features__icon--boat {
+  .features__item--boat svg {
     width: 38px;
     height: 13px;
-    top: 32px;
+    top: 31px;
+    left: 19px;
   }
 
-  .features__card-heading {
+  .features__item h3 {
     line-height: 140%;
     margin-bottom: 8px;
   }
@@ -1606,8 +1674,18 @@ input:checked ~ .form__check-icon::before {
     padding-top: 37px;
   }
 
-  .cruises__figcaption {
+  .cruises__item figcaption {
     padding: 0 30px 27px 35px;
+  }
+
+  .cruises__description {
+    padding: 28px 35px 85px;
+  }
+
+  .cruises__button-book {
+    left: 35px;
+    right: 35px;
+    bottom: 36px;
   }
 
   .booking {
@@ -1626,13 +1704,13 @@ input:checked ~ .form__check-icon::before {
     padding-bottom: 52px;
   }
 
-  .booking__heading {
+  .booking__left-column h2 {
     font-size: 34px;
     line-height: 150%;
     margin: 0 0 5px;
   }
 
-  .booking__text {
+  .booking__left-column p {
     margin: 0 auto;
   }
 
@@ -1649,7 +1727,7 @@ input:checked ~ .form__check-icon::before {
     gap: 30px;
   }
 
-  .contacts__image {
+  .contacts__left-column img {
     height: 335px;
   }
 
@@ -1661,15 +1739,17 @@ input:checked ~ .form__check-icon::before {
     padding-left: 0;
   }
 
-  .contacts__heading {
+  .contacts__right-column h3 {
     margin-bottom: 28px;
   }
 
-  .contacts__text--address::before {
+  .contacts__right-column p::before,
+  .contacts__right-column a::before {
     top: 3px;
   }
 
-  .contacts__text--phone::before {
+  .contacts__right-column p[href^="tel:"]::before,
+  .contacts__right-column a[href^="tel:"]::before {
     top: -1px;
   }
 
@@ -1764,7 +1844,7 @@ input:checked ~ .form__check-icon::before {
     margin: 0;
   }
 
-  .logo__image {
+  .logo svg {
     width: 42px;
     height: 22px;
   }
@@ -1781,7 +1861,7 @@ input:checked ~ .form__check-icon::before {
     overflow: hidden;
     width: 0;
     position: fixed;
-    background: #F9FBFD;
+    background: #f9fbfd;
     top: 0;
     right: 0;
     min-height: calc(100 * var(--vh, 1vh));
@@ -1799,7 +1879,7 @@ input:checked ~ .form__check-icon::before {
   }
 
   .main-nav--footer .main-nav__link {
-    color: #F9FBFD;
+    color: #f9fbfd;
   }
 
   .main-nav.no-js {
@@ -1831,13 +1911,13 @@ input:checked ~ .form__check-icon::before {
     flex-direction: column;
   }
 
-  .main-nav__item {
+  .main-nav__list li {
     margin-top: 14px;
     margin-bottom: 14px;
   }
 
-  .main-nav__link {
-    color: #011C40;
+  .main-nav__list a {
+    color: #011c40;
   }
 
   .menu-button {
@@ -1871,6 +1951,11 @@ input:checked ~ .form__check-icon::before {
     margin-bottom: 33px;
   }
 
+  .travel h2 {
+    font-size: 24px;
+    line-height: 140%;
+  }
+
   .features {
     background-image: url("../../img/bg/features-bg--tablet@2x.jpg");
     padding-top: 57px;
@@ -1887,11 +1972,11 @@ input:checked ~ .form__check-icon::before {
     margin-bottom: 30px;
   }
 
-  .features__icon {
+  .features__item svg {
     margin-bottom: 20px;
   }
 
-  .features__card-heading {
+  .features__item h3 {
     font-weight: 500;
     font-size: 18px;
     line-height: 140%;
@@ -1909,8 +1994,17 @@ input:checked ~ .form__check-icon::before {
     margin: 0 auto;
   }
 
-  .cruises__figcaption {
+  .cruises__item figcaption {
     padding: 0 25px 17px;
+  }
+
+  .cruises__description {
+    padding: 28px 25px 85px;
+  }
+
+  .cruises__button-book {
+    left: 25px;
+    right: 25px;
   }
 
   .booking {
@@ -1925,13 +2019,13 @@ input:checked ~ .form__check-icon::before {
     padding-bottom: 33px;
   }
 
-  .booking__heading {
+  .booking__left-column h2 {
     font-size: 24px;
     line-height: 130%;
     margin-bottom: 15px;
   }
 
-  .booking__text {
+  .booking__left-column p {
     font-size: 16px;
     line-height: 140%;
     max-width: 260px;
@@ -1941,26 +2035,26 @@ input:checked ~ .form__check-icon::before {
     padding: 34px 30px 40px;
   }
 
-  .form__title {
+  .form h3 {
     line-height: 140%;
-    margin-bottom: 29px;
+    margin-bottom: 28px;
     text-align: center;
   }
 
-  .form__label--checkbox {
+  .form__field--checkbox:not(:last-child) {
+    margin-bottom: 26px;
+  }
+
+  .form__field--checkbox label {
     padding-top: 0;
     padding-left: 28px;
     margin-top: -2px;
   }
 
-  .form__check-icon {
+  .form__field--checkbox span {
     width: 20px;
     height: 20px;
     top: 2px;
-  }
-
-  .form__submit-button {
-    margin-top: 26px;
   }
 
   .contacts {
@@ -1984,7 +2078,7 @@ input:checked ~ .form__check-icon::before {
     order: 2;
   }
 
-  .contacts__image {
+  .contacts__left-column img {
     height: 316px;
   }
 
@@ -1996,11 +2090,13 @@ input:checked ~ .form__check-icon::before {
     margin-bottom: 40px;
   }
 
-  .contacts__text--address::before {
+  .contacts__right-column p::before,
+  .contacts__right-column a::before {
     top: 5px;
   }
 
-  .contacts__text--phobe::before {
+  .contacts__right-column p[href^="tel:"]::before,
+  .contacts__right-column a[href^="tel:"]::before {
     top: 0;
   }
 
@@ -2058,7 +2154,7 @@ input:checked ~ .form__check-icon::before {
 
 @media (max-width: 375px) {
   .mobile-only {
-    display: inherit !important;
+    display: inherit;
   }
 }
 

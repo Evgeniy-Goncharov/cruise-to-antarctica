@@ -89,7 +89,7 @@
   }
 }
 
-.main-nav__item {
+.main-nav__list li {
   margin-top: 10px;
   margin-bottom: 10px;
 
@@ -111,12 +111,11 @@
   }
 }
 
-.main-nav__link {
+.main-nav__list a {
   color: $color-background-white;
 
   @media (hover: hover),
-  screen and (min-width: 0\0) {
-
+    screen and (min-width: 0\0) {
     &:hover,
     &:focus {
       opacity: 0.8;
