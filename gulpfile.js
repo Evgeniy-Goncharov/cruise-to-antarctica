@@ -75,7 +75,6 @@ const copy = () => {
     'source/fonts/**',
     'source/img/**',
     'source/favicon/**',
-    'source/js/**'
   ], {
     base: 'source',
   })
@@ -98,8 +97,8 @@ const syncServer = () => {
 
   gulp.watch('source/**.html', gulp.series(copy, refresh));
   gulp.watch('source/sass/**/*.{scss,sass}', gulp.series(css));
-  gulp.watch('source/js/**/*.{js,json}', gulp.series(copy, refresh));
-  gulp.watch('source/data/**/*.{js,json}', gulp.series(copy, refresh));
+  gulp.watch('source/js/**/*.{js,json}', gulp.series(js, refresh));
+  gulp.watch('source/data/**/*.{js,json}', gulp.series(js, refresh));
   gulp.watch('source/img/**/*.svg', gulp.series(copySvg, sprite, refresh));
   gulp.watch('source/img/**/*.{png,jpg,webp}', gulp.series(copyImages, refresh));
 
@@ -114,7 +113,7 @@ const refresh = (done) => {
   done();
 };
 
-const build = gulp.series(clean, svgo, copy, css, sprite);
+const build = gulp.series(clean, svgo, copy, css, sprite, js);
 
 const start = gulp.series(build, syncServer);
 
