@@ -885,13 +885,6 @@ button,
   transform: rotate(-45deg);
 }
 
-.intro {
-  background: #2c39f2 url("../img/bg/intro-bg.jpg") no-repeat center;
-  background-size: cover;
-  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
-
 .intro__wrapper {
   padding-top: 105px;
   padding-bottom: 105px;
@@ -1535,10 +1528,6 @@ button,
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1280px), (-o-min-device-pixel-ratio: 3/2) and (min-width: 1280px), (min-resolution: 144dpi) and (min-width: 1280px), (min-resolution: 1.5dppx) and (min-width: 1280px) {
-  .intro {
-    background-image: url("../img/bg/intro-bg@2x.jpg");
-  }
-
   .features {
     background-image: url("../img/bg/features-bg@2x.jpg");
   }
@@ -1589,12 +1578,6 @@ button,
 
   .main-nav__list li:not(:last-child) {
     margin-right: 23px;
-  }
-
-  .intro {
-    background-image: url("../img/bg/intro-bg--tablet.jpg");
-    -webkit-box-shadow: none;
-    box-shadow: none;
   }
 
   .intro__wrapper {
@@ -1810,10 +1793,6 @@ button,
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1279px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 1279px), (min-resolution: 144dpi) and (max-width: 1279px), (min-resolution: 1.5dppx) and (max-width: 1279px) {
-  .intro {
-    background-image: url("../img/bg/intro-bg--tablet@2x.jpg");
-  }
-
   .features {
     background-image: url("../img/bg/features-bg--tablet@2x.jpg");
   }
@@ -1985,10 +1964,6 @@ button,
 
   .menu-button.no-js {
     display: none;
-  }
-
-  .intro {
-    background-image: url("../img/bg/intro-bg--mobile.jpg");
   }
 
   .intro__wrapper {
@@ -2198,10 +2173,6 @@ button,
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 767px), (min-resolution: 144dpi) and (max-width: 767px), (min-resolution: 1.5dppx) and (max-width: 767px) {
-  .intro {
-    background-image: url("../img/bg/intro-bg--mobile@2x.jpg");
-  }
-
   .features {
     background-image: url("../img/bg/features-bg--mobile@2x.jpg");
   }
