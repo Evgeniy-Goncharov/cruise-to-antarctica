@@ -2,7 +2,6 @@
   max-width: 594px;
   flex-grow: 1;
   box-sizing: border-box;
-  transition: width 0.2s ease-out;
   font-weight: 500;
   line-height: 20px;
 
@@ -24,13 +23,44 @@
     line-height: 22px;
 
     &--mobile-menu {
-      overflow: hidden;
-      width: 0;
+      padding-top: 0;
+      transition: background-color 0.2s ease-out;
+      z-index: 2;
+      position: relative;
+      max-width: none;
+    }
+
+    &--mobile-menu.no-js,
+    &--mobile-menu.menu-open {
+      width: 100%;
+      min-height: calc(100 * var(--vh, 1vh));
+
+      .main-nav__logo {
+        display: block;
+      }
+    }
+
+    &--mobile-menu.menu-open {
       position: fixed;
-      background: $color-background-white;
       top: 0;
       right: 0;
-      min-height: calc(100 * var(--vh, 1vh));
+      background-color: $color-menu-mask;
+
+      .main-nav__menu-wrapper {
+        right: 0;
+      }
+    }
+
+    &--mobile-menu.no-js {
+      min-height: min-content;
+      position: relative;
+
+      .main-nav__menu-wrapper {
+        width: 100%;
+        max-width: none;
+        position: relative;
+        min-height: auto;
+      }
     }
 
     &--footer {
@@ -47,25 +77,24 @@
         color: $color-background-white;
       }
     }
+  }
+}
 
-    &.no-js {
-      width: 100%;
-      min-height: min-content;
-      position: relative;
-    }
+.main-nav__menu-wrapper {
+  transition: right 0.2s ease-out;
 
-    &.menu-open,
-    &.no-js {
-      padding: 71px 25px 20px;
-
-      .main-nav__logo {
-        display: block;
-      }
-    }
-
-    &.menu-open {
-      width: 285px;
-    }
+  @include vp-767 {
+    width: 100%;
+    overflow: hidden;
+    max-width: 285px;
+    background: $color-background-white;
+    min-height: calc(100 * var(--vh, 1vh));
+    box-sizing: border-box;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    bottom: 0;
+    padding: 71px 25px 20px;
   }
 }
 
@@ -83,9 +112,11 @@
   display: flex;
   flex-wrap: wrap;
 
-
   @include vp-767 {
     flex-direction: column;
+    overflow: auto;
+    height: 100%;
+    flex-wrap: nowrap;
   }
 }
 
@@ -115,7 +146,8 @@
   color: $color-background-white;
 
   @media (hover: hover),
-    screen and (min-width: 0\0) {
+  screen and (min-width: 0\0) {
+
     &:hover,
     &:focus {
       opacity: 0.8;

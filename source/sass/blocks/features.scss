@@ -1,29 +1,29 @@
 .features {
-  background: $color-grey url("../../img/bg/features-bg.jpg") no-repeat center;
+  background: $color-grey url("../img/bg/features-bg.jpg") no-repeat center;
   background-size: cover;
   padding-top: 110px;
 
   @include vp-1279 {
-    background-image: url("../../img/bg/features-bg--tablet.jpg");
+    background-image: url("../img/bg/features-bg--tablet.jpg");
     padding-top: 90px;
   }
 
   @include vp-767 {
-    background-image: url("../../img/bg/features-bg--tablet@2x.jpg");
+    background-image: url("../img/bg/features-bg--tablet@2x.jpg");
     padding-top: 57px;
   }
 
   @include retina {
     @include desk {
-      background-image: url("../../img/bg/features-bg@2x.jpg");
+      background-image: url("../img/bg/features-bg@2x.jpg");
     }
 
     @include vp-1279 {
-      background-image: url("../../img/bg/features-bg--tablet@2x.jpg");
+      background-image: url("../img/bg/features-bg--tablet@2x.jpg");
     }
 
     @include vp-767 {
-      background-image: url("../../img/bg/features-bg--mobile@2x.jpg");
+      background-image: url("../img/bg/features-bg--mobile@2x.jpg");
     }
   }
 }

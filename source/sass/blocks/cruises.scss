@@ -26,13 +26,11 @@
 .cruises__item {
   position: relative;
 
-  @media (hover: hover),
-    screen and (min-width: 0\0) {
-    &:hover,
-    &:focus {
-      .cruises__description {
-        display: block;
-      }
+  &:hover,
+  &:focus,
+  &:focus-within {
+    .cruises__description {
+      display: flex;
     }
   }
 }
@@ -75,12 +73,14 @@
   top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
   min-height: 100%;
   background-color: $color-black-for-text;
   color: $color-background-white;
-  padding: 29px 25px 85px;
+  padding: 29px 25px 35px;
   font-size: 14px;
   line-height: 140%;
+  flex-direction: column;
   display: none;
 
   @include vp-1279 {
@@ -104,6 +104,9 @@
 .cruises__description dl {
   margin: 0;
   padding: 0;
+  overflow: auto;
+  flex-grow: 1;
+  margin-bottom: 10px;
 }
 
 .cruises__description dt {
@@ -118,11 +121,6 @@
 }
 
 .cruises__button-book {
-  position: absolute;
-  left: 25px;
-  right: 25px;
-  bottom: 35px;
-
   @include vp-1279 {
     left: 35px;
     right: 35px;

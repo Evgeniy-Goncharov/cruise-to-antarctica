@@ -115,7 +115,7 @@
     width: 18px;
     height: 22px;
     top: 0;
-    background: url("../../img/svg/mark.svg") no-repeat center;
+    background: url("../img/svg/mark.svg") no-repeat center;
   }
 
   &[href^="tel:"] {
@@ -132,7 +132,7 @@
     top: 1px;
     width: 18px;
     height: 18px;
-    background: url("../../img/svg/phone.svg") no-repeat center;
+    background: url("../img/svg/phone.svg") no-repeat center;
   }
 
   @include vp-1279 {

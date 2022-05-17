@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Учебный проект для Акселератора - &laquo;Круизы в Антарктику&raquo;">
   <title>HTML-Academy Круизы в Антарктику</title>
-  <link rel="preload" href="fonts/montserratregular.woff2" as="font">
-  <link rel="preload" href="fonts/montserratmedium.woff2" as="font">
-  <link rel="preload" href="fonts/montserratsemibold.woff2" as="font">
-  <link rel="preload" href="fonts/montserratbold.woff2" as="font">
+  <link rel="preload" href="fonts/montserratregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserratmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserratsemibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserratbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -25,22 +25,24 @@
           </svg>
         </a>
 
-        <button class="menu-button no-js" aria-label="Открыть меню" data-menu="menu-button"></button>
+        <button class="page-header__menu-button menu-button no-js" aria-label="Открыть меню" data-menu="menu-button"></button>
 
         <nav class="page-header__nav main-nav main-nav--mobile-menu no-js" data-menu="mobile-menu">
-          <a class="main-nav__logo logo logo--black">
-            <svg role="img" alt="Круизы в Антарктику - побывай в самых загадочных уголках планеты!" width="70"
-              height="38">
-              <use href="img/sprite_auto.svg#logo"></use>
-            </svg>
-          </a>
+          <div class="main-nav__menu-wrapper">
+            <a class="main-nav__logo logo logo--black">
+              <svg role="img" alt="Круизы в Антарктику - побывай в самых загадочных уголках планеты!" width="70"
+                height="38">
+                <use href="img/sprite_auto.svg#logo"></use>
+              </svg>
+            </a>
 
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="#features">Преимущества</a> </li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Направления</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#cruises">Ближайшие круизы</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#contacts">Контакты</a></li>
-          </ul>
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link" href="#features">Преимущества</a> </li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Направления</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#cruises">Ближайшие круизы</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#contacts">Контакты</a></li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -130,7 +132,7 @@
         <div class="container">
           <h2 class="section-heading section-heading--center">Ближайшие круизы</h2>
           <ul class="cruises__list">
-            <li class="cruises__item">
+            <li class="cruises__item" tabindex="0">
               <figure>
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
@@ -165,7 +167,7 @@
               </div>
             </li>
 
-            <li class="cruises__item">
+            <li class="cruises__item" tabindex="0">
               <figure>
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
@@ -200,7 +202,7 @@
               </div>
             </li>
 
-            <li class="cruises__item">
+            <li class="cruises__item" tabindex="0">
               <figure>
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
@@ -236,7 +238,7 @@
               </div>
             </li>
 
-            <li class="cruises__item">
+            <li class="cruises__item" tabindex="0">
               <figure>
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
@@ -271,7 +273,7 @@
               </div>
             </li>
 
-            <li class="cruises__item">
+            <li class="cruises__item" tabindex="0">
               <figure>
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
@@ -307,7 +309,7 @@
               </div>
             </li>
 
-            <li class="cruises__item">
+            <li class="cruises__item" tabindex="0">
               <figure>
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
@@ -342,7 +344,7 @@
               </div>
             </li>
 
-            <li class="cruises__item">
+            <li class="cruises__item" tabindex="0">
               <figure>
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
@@ -377,7 +379,7 @@
               </div>
             </li>
 
-            <li class="cruises__item">
+            <li class="cruises__item" tabindex="0">
               <figure>
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
@@ -438,7 +440,7 @@
               <div class="form__field">
                 <label>
                   <span>Ваш телефон</span>
-                  <input type="tel" name="phone" placeholder="Телефон" required>
+                  <input type="tel" name="phone" placeholder="Телефон" pattern="^[ 0-9]+$" required>
                 </label>
               </div>
 

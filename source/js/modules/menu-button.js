@@ -1,4 +1,5 @@
 const menuButton = document.querySelector('[data-menu=menu-button]');
+const nav = document.querySelector('.main-nav');
 const menuElements = document.querySelectorAll('[data-menu]');
 
 const initMenu = () => {
@@ -15,7 +16,8 @@ const initMenu = () => {
 
     menuButton.ariaLabel = 'Закрыть меню';
     isMenuOpen = true;
-    document.addEventListener('click', closeMenu);
+    document.body.classList.add('scroll-lock');
+    nav.addEventListener('click', closeMenu);
   };
 
   const closeMenu = () => {
@@ -25,6 +27,7 @@ const initMenu = () => {
 
     menuButton.ariaLabel = 'Открыть меню';
     isMenuOpen = false;
+    document.body.classList.remove('scroll-lock');
     document.removeEventListener('click', closeMenu);
   };
 

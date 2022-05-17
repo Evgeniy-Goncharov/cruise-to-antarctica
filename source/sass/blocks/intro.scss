@@ -1,28 +1,28 @@
 .intro {
-  background: $color-neon-blue url("../../img/bg/intro-bg.jpg") no-repeat center;
+  background: $color-neon-blue url("../img/bg/intro-bg.jpg") no-repeat center;
   background-size: cover;
   box-shadow: 0 4px 4px $color-shadow;
 
   @include vp-1279 {
-    background-image: url("../../img/bg/intro-bg--tablet.jpg");
+    background-image: url("../img/bg/intro-bg--tablet.jpg");
     box-shadow: none;
   }
 
   @include vp-767 {
-    background-image: url("../../img/bg/intro-bg--mobile.jpg");
+    background-image: url("../img/bg/intro-bg--mobile.jpg");
   }
 
   @include retina {
     @include desk {
-      background-image: url("../../img/bg/intro-bg@2x.jpg");
+      background-image: url("../img/bg/intro-bg@2x.jpg");
     }
 
     @include vp-1279 {
-      background-image: url("../../img/bg/intro-bg--tablet@2x.jpg");
+      background-image: url("../img/bg/intro-bg--tablet@2x.jpg");
     }
 
     @include vp-767 {
-      background-image: url("../../img/bg/intro-bg--mobile@2x.jpg");
+      background-image: url("../img/bg/intro-bg--mobile@2x.jpg");
     }
   }
 }
