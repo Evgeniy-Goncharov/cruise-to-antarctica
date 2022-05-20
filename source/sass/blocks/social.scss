@@ -21,7 +21,7 @@
     margin-right: 28px;
   }
 
-  @include vp-1279 {
+  @include vp-1023 {
     &:not(:last-child) {
       margin-right: 23px;
     }
@@ -60,7 +60,7 @@
   }
 
 
-  @include vp-1279 {
+  @include vp-1023 {
     &--fb {
       width: 9px;
       height: 16px;

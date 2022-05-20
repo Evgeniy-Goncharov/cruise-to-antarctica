@@ -4,7 +4,7 @@
   padding-top: 50px;
   padding-bottom: 50px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     background-image: url("../img/bg/booking-bg--tablet.jpg");
     text-align: center;
     padding-top: 87px;
@@ -20,7 +20,7 @@
       background-image: url("../img/bg/booking-bg@2x.jpg");
     }
 
-    @include vp-1279 {
+    @include vp-1023 {
       background-image: url("../img/bg/booking-bg--tablet@2x.jpg");
     }
 
@@ -35,7 +35,7 @@
   display: flex;
   align-items: center;
 
-  @include vp-1279 {
+  @include vp-1023 {
     display: block;
   }
 
@@ -48,7 +48,7 @@
   flex-grow: 1;
   padding-right: 50px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     padding-right: 0;
     padding-bottom: 52px;
   }
@@ -67,7 +67,7 @@
   margin-top: -7px;
   margin-bottom: 8px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     font-size: 34px;
     line-height: 150%;
     margin: 0 0 5px;
@@ -88,7 +88,7 @@
   margin: 0;
   padding: 0;
 
-  @include vp-1279 {
+  @include vp-1023 {
     margin: 0 auto;
   }
 

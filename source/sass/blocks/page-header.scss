@@ -1,15 +1,16 @@
 .page-header {
   min-height: 73px;
   box-sizing: border-box;
-  padding-top: 25px;
-  padding-bottom: 25px;
   background: transparent;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 25px 45px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     padding-left: 45px;
     padding-right: 45px;
     padding-top: 20px;
@@ -54,7 +55,7 @@
 .page-header__nav {
   margin-top: 10px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     margin-top: 0;
   }
 }

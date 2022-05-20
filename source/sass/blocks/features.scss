@@ -3,7 +3,7 @@
   background-size: cover;
   padding-top: 110px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     background-image: url("../img/bg/features-bg--tablet.jpg");
     padding-top: 90px;
   }
@@ -18,7 +18,7 @@
       background-image: url("../img/bg/features-bg@2x.jpg");
     }
 
-    @include vp-1279 {
+    @include vp-1023 {
       background-image: url("../img/bg/features-bg--tablet@2x.jpg");
     }
 
@@ -37,7 +37,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     gap: 30px;
     padding-top: 37px;
   }
@@ -56,7 +56,7 @@
   padding: 80px 30px 24px;
   position: relative;
 
-  @include vp-1279 {
+  @include vp-1023 {
     padding: 70px 18px 20px 20px;
 
     br:not(.mobile-only) {
@@ -78,7 +78,7 @@
   top: 30px;
   left: 30px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     left: 20px;
   }
 
@@ -91,7 +91,7 @@
   width: 27px;
   height: 32px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     width: 21px;
     height: 26px;
     top: 24px;
@@ -103,7 +103,7 @@
   height: 21px;
   top: 35px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     width: 33px;
     height: 19px;
     left: 18px;
@@ -116,7 +116,7 @@
   height: 15px;
   top: 38px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     width: 38px;
     height: 13px;
     top: 31px;
@@ -133,7 +133,7 @@
   margin-bottom: 10px;
 
 
-  @include vp-1279 {
+  @include vp-1023 {
     line-height: 140%;
     margin-bottom: 8px;
   }
