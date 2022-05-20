@@ -1,3 +1,4 @@
+const menu = document.querySelector('[data-menu=mobile-menu-wrapper]');
 const menuButton = document.querySelector('[data-menu=menu-button]');
 const nav = document.querySelector('.main-nav');
 const menuElements = document.querySelectorAll('[data-menu]');
@@ -40,6 +41,12 @@ const initMenu = () => {
       closeMenu();
     } else {
       openMenu();
+    }
+  });
+
+  menu.addEventListener('click', (evt) => {
+    if (!evt.target.href) {
+      evt.stopPropagation();
     }
   });
 };
